@@ -1,0 +1,46 @@
+GET http://localhost:3000
+Content-Type: application/json
+
+{
+       "id":"1",
+       "nombre":"nombre1"
+}
+###
+GET http://localhost:3000/test
+Content-Type: application/json
+
+{
+    
+}
+
+###
+GET http://localhost:3000/alumnos
+Content-Type: application/json
+
+{
+  
+}
+###
+
+POST http://localhost:3000/alumnos
+Content-Type: application/json
+
+{
+    "id":"2",
+    "nombre":"miguel",
+    "apepat":"vega",
+    "apemat":"ramos"  
+}
+###
+PUT http://localhost:3000/alumnos/0
+Content-Type: application/json
+
+{
+    "apemat":"perez"
+}
+###
+DELETE  http://localhost:3000/alumnos/0
+Content-Type: application/json
+# {
+#     "apemat":"perez"
+# }
